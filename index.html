@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container about-container">
+            <div class="about-photo">
+                <img src="my.jpeg" alt="Your Name">
+            </div>
+            <div class="about-description">
+                <h2>About Me</h2>
+                <p>
+                    Pooja Gujar ,
+                    Web Developer<br>
+                    
+                    I am an accomplished web developer with a strong focus on creating interactive, responsive websites that integrate sophisticated design with technical precision. My expertise encompasses developing user-centric solutions that are both visually appealing and functionally robust, ensuring scalability and efficiency.
+                    
+                    My commitment to excellence drives me to continually advance my knowledge of emerging technologies and industry trends, enabling me to deliver innovative and high-quality digital experiences. Outside of my professional pursuits, I am passionate about exploring new technologies and engaging in outdoor activities to maintain a balanced and inspired approach to my work.
+                </p>
+                <a href="https://drive.google.com/file/d/17igkjWKMt5mO4Z_kN3_D91yvKbI8sPHF/view?usp=drive_link" class="resume-button" target="_blank" rel="noopener noreferrer">
+                    Download My Resume
+                </a>
+            </div>
+        </div>
+    </section>
+   
+    <!-- Project Slider -->
+   <section id="projects">
+    <div class="container">
+        <h2>Projects</h2>
+        <div class="slider">
+            <div class="slider-wrapper">
+                <div class="slide active">
+                    <h3>Project 1</h3>
+                    <h4>Hangman</h4>
+                    <p>The Hangman project is an interactive word-guessing game designed for players of all ages. It features a fun and engaging interface where users can guess letters to complete a word, with a stick figure being drawn for each wrong guess. This game demonstrates your skills in web development, using HTML, CSS, and JavaScript to create an enjoyable, responsive, and visually appealing experience.</p>
+                    <a href="https://pari-65.github.io/Hangman/" class="view-project-button" target="_blank" rel="noopener noreferrer">
+                        View Project
+                    </a>
+                </div>
+                <div class="slide">
+                    <h3>Project 2</h3>
+                    <h4>Quiz Game</h4>
+                    <p>This project is an interactive quiz game developed using HTML, CSS, and JavaScript. The game presents users with a series of multiple-choice questions, testing their knowledge in various subjects. It features a simple, user-friendly interface with immediate feedback on correct and incorrect answers. The design is responsive, ensuring the game is playable on different devices, including desktops and mobile phones. This project demonstrates my ability to integrate logic with user interactivity while maintaining a clean, organized design. It highlights my skills in creating engaging, responsive web applications.</p>
+                    <a href="https://pari-65.github.io/quiz-game/" class="view-project-button" target="_blank" rel="noopener noreferrer">
+                        View Project
+                    </a>
+                </div>
+                <div class="slide">
+                    <h3>Project 3</h3>
+                        <h4>Tic-Tac-Toe Game.</h4>
+                    <p>A modern web-based Tic-Tac-Toe game featuring neon effects and smooth animations. Players alternate between 'X' and 'O', with automatic winner detection and a reset option for easy replay. The sleek design enhances the classic game with a futuristic look.</p>
+                    <a href=" https://pari-65.github.io/tic-tak-toe/" class="view-project-button" target="_blank" rel="noopener noreferrer">
+                        View Project
+                    </a>
+                </div>
+                <div class="slide">
+                    <h3>Project 5</h3>
+                    <h4>Calculator App</h4>
+                    <p>The Calculator project is a functional and simple web-based tool for performing basic mathematical operations like addition, subtraction, multiplication, and division. It features a clean, intuitive design that allows users to easily input numbers and get instant results. This project demonstrates your skills in HTML, CSS, and JavaScript, focusing on creating a practical, user-friendly application.</p>
+                    <a href="https://pari-65.github.io/calculator/" class="view-project-button" target="_blank" rel="noopener noreferrer">
+                        View Project
+                    </a>
+                </div>
+            </div>
+               
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Form with Validation -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contactForm">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+                <div class="success-message" style="display:none;">Message Sent Successfully!</div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2024 Pooja Gujar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

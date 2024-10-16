@@ -1,0 +1,258 @@
+/* Neon Background and Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #fff; /* Change text color to white to contrast with neon background */
+    background: radial-gradient(circle, #000000, #0d0d0d); /* Dark background */
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #060606;
+    padding: 1rem 0;
+    box-shadow: 0 0 20px #00ffcc; /* Neon glow */
+    text-align: center;
+    color: #e0ebe9; /* Neon cyan color */
+}
+
+header h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #070c0b, 0 0 20px #00ffcc, 0 0 30px #00ffcc; /* Neon text effect */
+   
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #00ffcc; /* Neon cyan color */
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #079896; 
+    text-shadow: 0 0 5px #faf6f8, 0 0 10px #f3edf0, 0 0 15px #f0e9ee; /* Neon glow effect */
+}
+
+/* Neon Project Cards */
+.project {
+    background-color: #222;
+    padding: 1.5rem;
+    border-radius: 12px;
+    color: #fff;
+    text-shadow: 0 0 5px #00ffcc;
+    box-shadow: 0 0 15px #00ffcc, 0 0 25px #00ffcc; /* Neon glow */
+    transition: transform 0.3s ease;
+}
+
+/* Contact Section Styling */
+#contact {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #00ccff; /* Neon pink */
+    text-shadow: 0 0 2px #f7f4f6, 0 0 8px #f3ecf1;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Ensures elements stack in a column */
+    align-items: center; /* Center align the form elements */
+    width: 100%;
+    max-width: 90%; /* You can adjust this to fit your form width */
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #222;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc; /* Neon glow */
+}
+
+label {
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 0 0 5px #00ffcc;
+}
+
+input, textarea {
+    width: 50%; /* Make the input and textarea fields take full width */
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background-color: #111;
+    color: #fff;
+    box-shadow: 0 0 5px #00ffcc;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px #ff0099, 0 0 15px #ff0099; /* Pink glow on focus */
+}
+
+button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: #6db5fc;
+    color: #0c0c0c;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #f1f8f7, 0 0 20px #f5fbf9, 0 0 30px #00ffcc;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #b57df9;
+    box-shadow: 0 0 20px #f6f1f4, 0 0 30px #fdf6fa, 0 0 40px #ff0099;
+}
+
+.success-message {
+    margin-top: 10px;
+    color: #0400ff;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+
+/* Slider Styling */
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    background: #222;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00ffcc, 0 0 40px #00ffcc;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+    color: #fff;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+}
+
+.prev, .next {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #00ffcc;
+    color: #0c0b0b;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev:hover, .next:hover {
+    background-color: #faf6f8;
+    box-shadow: 0 0 10px #f2f0f1;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #111;
+    color: #00ffcc;
+    text-shadow: 0 0 5px #00ffcc, 0 0 10px #00ffcc;
+}
+.view-project-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    background-color: #18f9cc;
+    color: #0c0c0c;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.view-project-button:hover {
+    background-color: #6ff3f6;
+    box-shadow: 0 0 20px #faf7f9, 0 0 30px #f0ebee;
+}
+/* About Section Styles */
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 1%;
+    box-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+}
+
+.about-photo img {
+    width: 250px;
+    height: 450px; /* Adjust the height for the oval effect */
+    border-radius: 50% / 30%; /* Horizontal and vertical radii */
+    border: 5px solid #f2f7f6; /* Neon border */
+    box-shadow: 0 0 5px #fbfdfd, 0 0 10px #f4f5f5; /* Neon glow */
+}
+
+
+.about-description {
+    max-width: 600px;
+   
+}
+
+.about-description h2 {
+    color: #00d9ff;
+    text-shadow: 0 0 10px #31d3e8, 0 0 20px #f6eaf1;
+}
+
+.about-description p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #fff;
+    text-shadow: 0 0 5px #00ffcc;
+}
+/* Resume Button Styling */
+.resume-button {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #00ffcc;
+    border-radius: 5px;
+    color: #0c0c0c;
+    text-decoration: none;
+    box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 1.5rem; /* Space between description and button */
+    margin-left: 55%;
+}
+
+.resume-button:hover {
+    background-color: #6ff3f6;
+    box-shadow: 0 0 20px #faf7f9, 0 0 30px #f0ebee;
+}
